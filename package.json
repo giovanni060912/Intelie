@@ -1,0 +1,42 @@
+{
+  "name": "teste",
+  "version": "1.0.0",
+  "private": true,
+  "scripts": {
+    "build": "nuxt build",
+    "test:unit": "cross-env TEST=unit ava ./test/specs/**/*",
+    "test:e2e": "cross-env TEST=e2e ava ./test/e2e/**/*",
+    "dev": "nuxt",
+    "generate": "nuxt generate",
+    "start": "nuxt start",
+    "test": "yarn test:unit && yarn test:e2e"
+  },
+  "dependencies": {
+    "@deveodk/vue-toastr": "^1.1.0",
+    "@nuxtjs/vuetify": "^1.11.3",
+    "chart.js": "2",
+    "core-js": "^3.9.1",
+    "nuxt": "^2.15.3",
+    "vue-chartjs": "^3.5.1",
+    "vue-select": "^3.11.2",
+    "vuetify": "^2.5.3"
+  },
+  "devDependencies": {
+    "@ava/babel": "^1.0.1",
+    "@vue/test-utils": "^1.1.3",
+    "ava": "^3.15.0",
+    "babel-plugin-module-resolver": "^4.1.0",
+    "cross-env": "^7.0.3",
+    "deepmerge": "^4.2.2",
+    "fibers": "^5.0.0",
+    "jsdom": "^16.5.1",
+    "jsdom-global": "^3.0.2",
+    "require-extension-hooks": "^0.3.3",
+    "require-extension-hooks-babel": "^1.0.0",
+    "require-extension-hooks-vue": "^3.0.0",
+    "sass": "^1.34.1",
+    "sass-loader": "^12.0.0",
+    "vue-cli-plugin-vuetify": "~2.4.1",
+    "vuetify-loader": "^1.7.0"
+  }
+}
